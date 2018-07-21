@@ -12,6 +12,7 @@ class Stopwatch {
             seconds: 0,
             miliseconds: 0
         };
+        this.print();
     }
 
     print() {
@@ -50,12 +51,7 @@ class Stopwatch {
     stop() {
         this.running = false;
         clearInterval(this.watch);
-    }
-
-    reserStoper() {
-        this.print();
-	}
-    
+    } 
 }
 
 function pad0(value) {

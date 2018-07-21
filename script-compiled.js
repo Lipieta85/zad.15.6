@@ -22,6 +22,7 @@ var Stopwatch = function () {
                 seconds: 0,
                 miliseconds: 0
             };
+            this.print();
         }
     }, {
         key: 'print',
@@ -70,11 +71,6 @@ var Stopwatch = function () {
         value: function stop() {
             this.running = false;
             clearInterval(this.watch);
-        }
-    }, {
-        key: 'reserStoper',
-        value: function reserStoper() {
-            this.print();
         }
     }]);
 
